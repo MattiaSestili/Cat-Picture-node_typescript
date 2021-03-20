@@ -19,7 +19,7 @@ export const PictureViewer = () => {
   }
 
   return (
-    <Container>
+    <Container fluid={"sm"}>
       <Row className="justify-content-md-center">
         <Col sm={12}>
           <h1>Cat Viewer</h1>

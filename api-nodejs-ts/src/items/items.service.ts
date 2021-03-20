@@ -1,5 +1,8 @@
 import fetch from "node-fetch"
 
+/**
+ * Data Model Interfaces
+ */
 export interface ICatPicture {
   breeds: any[],
   height: number,
@@ -8,6 +11,9 @@ export interface ICatPicture {
   width: number
 }
 
+/**
+ * Service Methods
+ */
 export const fetchRandomPicture = async (): Promise<ICatPicture[]> => {
   const jsonResponse = await fetch(`https://api.thecatapi.com/v1/images/search?limit=1`, {
     headers: {
